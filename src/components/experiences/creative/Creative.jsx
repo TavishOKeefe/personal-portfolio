@@ -1,5 +1,5 @@
 import React from 'react';
-import Writing from './Writing';
+import Writing from './writing/Writing';
 import Entertainment from './Entertainment';
 
 function Creative(){
