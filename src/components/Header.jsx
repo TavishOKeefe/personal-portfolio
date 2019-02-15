@@ -5,9 +5,18 @@ function Header(){
   return (
     <div>
       <style jsx>{`
+        
+        h1 {
+          text-align: center;
+        }
+        
+        li {
+          margin-left: 25px;
+        }
+        
         .container {
           margin: 25px;
-          text-align: center;
+          text-align: inline;
           position: sticky;
           right: 10%;
           left:10%;
@@ -15,38 +24,32 @@ function Header(){
 
         .topnav {
           border-radius: 25px;
-          list-style-type: none;
           margin: 0;
           padding: 0;
           overflow: hidden;
-          background-color: #333;
+          background-color: #9bb4dd;
         }
 
-        .topnav li a {
+        .topnav li p {
           float: left;
           display: block;
           color: #f2f2f2;
-          text-align: center;
+          text-align: inline;
           padding: 14px 16px;
           text-decoration: none;
           font-size: 17px;
         }
 
-        .topnav a:hover {
+        .topnav p:hover {
           border-radius: 25px;
-          background-color: #07051a;
+          background-color: #bccbe5;
           color: white;
         }
 
-        .active {
-          background-color: #4CAF50;
-          color: white;
-        }
-
-        .topnav.responsive a {
+        .topnav.responsive p {
           float: none;
           display: block;
-          text-align: left;
+          text-align: inline;
         }
 
         ul.topnav li.right {float: right;}
@@ -56,12 +59,12 @@ function Header(){
           ul.topnav li {float: none;}
         }
         `}</style>
-      <h1>&hearts; Tavish OKeefe &hearts;</h1>
+        <h1>&hearts; Tavish OKeefe &hearts;</h1>
       <div className="container">
         <ul className="topnav">
-          <li className="navbar-brand"><Link to="/experiences">Experiences</Link></li>
-          <li className="navbar-brand"><Link to="/contact">Contact Info</Link></li>
-          <li className="navbar-brand"><Link to="/">Home</Link></li>
+          <p><li className="navbar-brand"><Link to="/experiences">Experiences</Link></li></p>
+          <p><li className="navbar-brand"><Link to="/contact">Contact Info</Link></li></p>
+          <p><li className="navbar-brand"><Link to="/">Home</Link></li></p>
         </ul>
       </div>
     </div>
