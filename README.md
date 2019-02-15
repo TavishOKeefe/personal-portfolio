@@ -10,8 +10,6 @@ _This application will do its best to promote the life and work of its creator._
 
 ![alt text](./src/assets/images/Tavish-Portfolio.png "Portfolio-Wireframe")
 
-* _**.**_
-
 
 
 ## _Setup/Installation Requirements_
