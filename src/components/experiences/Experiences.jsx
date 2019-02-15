@@ -1,12 +1,11 @@
 import React from 'react';
-import {Personal} from './Personal';
-import {Creative} from './Creative';
-import {Professional} from './Professional';
+import Personal from './personal/Personal';
+import Creative from './creative/Creative';
+import Professional from './professional/Professional';
 
 function Experiences(){
   return (
     <div>
-      <p>This is where my Experiences will go</p>
       <Personal/>
       <Creative/>
       <Professional/>
