@@ -5,9 +5,11 @@ import Places from './Places';
 function Personal(){
   return (
     <div>
-      <p>This is where my Personal will go</p>
-      <Hobbies/>
-      <Places/>
+      <hr/>
+        <p>This is where my Personal will go</p>
+        <Hobbies/>
+        <Places/>
+      <hr/>
     </div>
   );
 }
