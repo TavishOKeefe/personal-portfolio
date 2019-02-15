@@ -1,7 +1,7 @@
 {
-  "name": "averysorganics",
+  "name": "Personal-Portfolio",
   "version": "1.0.0",
-  "description": "A farm market schedule",
+  "description": "A portfolio of my work",
   "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "lint": "eslint 'src/**' 'src/**/**': exit 0",
     "lint-fix": "eslint 'src/**' 'src/**/**' --fix: exit 0"
   },
-  "author": "Scott Bergler & Tavish O'Keefe",
+  "author": "Tavish O'Keefe",
   "license": "MIT",
   "dependencies": {
     "@material-ui/core": "3.9.2",
