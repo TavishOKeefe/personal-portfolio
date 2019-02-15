@@ -10,30 +10,8 @@ _This application will do its best to promote the life and work of its creator._
 
 ![alt text](./src/assets/images/Tavish-Portfolio.png "Portfolio-Wireframe")
 
-* _**Build root component to hold movie objects and act as command center of application.**_
-* _**Build model folder to construct movie objects.**_
-* _**Create component to display objects.**_
-* _**Create Explore component.**_
-* _**Write HTML for Explore component.**_
-* _**Create Redeem component.**_
-* _**Write HTML for Redeem component.**_
-* _**Create MyMovies component.**_
-* _**Write HTML for MyMovies component.**_
-* _**Create Search component.**_
-* _**Write HTML for Search component.**_
-* _**Create Log In component.**_
-* _**Write HTML for Log In component.**_
-* _**Create Get Started component.**_
-* _**Write HTML for Get Started component.**_
-* _**Create routs to various pages through app.routing.**_
-* _**Refactor code to incorporate dynamic id's.**_
-* _**Link application to Firebase.**_
-* _**Create a data base within Firebase.**_
-* _**Link to an API**_
-* _**Link external API, movie information, to application.**_
-* _**Link API to Firebase database.**_
-* _**Style project to look like a working application.**_
-* _**Launch application.**_
+* _**.**_
+
 
 
 ## _Setup/Installation Requirements_
