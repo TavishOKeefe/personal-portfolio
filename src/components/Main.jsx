@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Main() {
@@ -7,12 +8,10 @@ function Main() {
     <style jsx>{`
       div {
         border: 1px solid #000;
-      },
-      h1 {
         text-align: center;
-      }
+      },
       `}</style>
-      <text>Link to Experiences</text><text>Link to Contact info</text>
+      <text><Link to="/experiences">Experiences</Link></text><text><Link to="/contact">Contact Info</Link></text>
     </div>
   );
 }
