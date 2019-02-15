@@ -6,7 +6,7 @@ function Personal(){
   return (
     <div>
       <hr/>
-        <p>This is where my Personal will go</p>
+        <p>This is where my <strong>Personal</strong> will go</p>
         <Hobbies/>
         <Places/>
       <hr/>

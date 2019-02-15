@@ -6,9 +6,13 @@ import Professional from './professional/Professional';
 function Experiences(){
   return (
     <div>
+      <br/>
       <Personal/>
+      <br/>
       <Creative/>
+      <br/>
       <Professional/>
+      <br/>
     </div>
   );
 }
