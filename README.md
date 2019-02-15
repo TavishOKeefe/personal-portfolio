@@ -8,6 +8,8 @@ _This application will do its best to promote the life and work of its creator._
 
 ## Specifications
 
+![alt text](./src/assets/images/Tavish-Portfolio.png "Portfolio-Wireframe")
+
 * _**Build root component to hold movie objects and act as command center of application.**_
 * _**Build model folder to construct movie objects.**_
 * _**Create component to display objects.**_
@@ -51,14 +53,10 @@ _Tavish OKeefe: okeefe.tavish@gmail.com_
 
 ## Technologies Used
 
-* _Node_
-* _Angular_
-* _TypeScript_
-* _Karma_
+* _JSX_
+* _Javascript_
+* _HTML_
 * _eslint_
-* _Webpack_
-* _Uglify_
-* _Jasmine_
 
 ### License
 
