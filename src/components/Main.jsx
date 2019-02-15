@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 
 function Main() {
@@ -11,7 +10,6 @@ function Main() {
         text-align: center;
       },
       `}</style>
-      <text><Link to="/experiences">Experiences</Link></text><text><Link to="/contact">Contact Info</Link></text>
     </div>
   );
 }
