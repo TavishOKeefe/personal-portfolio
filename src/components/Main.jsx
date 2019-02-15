@@ -4,7 +4,15 @@ import React from 'react';
 function Main() {
   return (
     <div>
-      <p> This is where the content for the main page will go</p>
+    <style jsx>{`
+      div {
+        border: 1px solid #000;
+      },
+      h1 {
+        text-align: center;
+      }
+      `}</style>
+      <text>Link to Experiences</text><text>Link to Contact info</text>
     </div>
   );
 }
