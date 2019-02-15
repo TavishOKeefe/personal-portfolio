@@ -1,9 +1,10 @@
 import React from 'react';
+import Information from './Information';
 
 function Contact(){
   return (
     <div>
-      <p>This is where my contact information will go.</p>
+      <Information/>
     </div>
   );
 }
