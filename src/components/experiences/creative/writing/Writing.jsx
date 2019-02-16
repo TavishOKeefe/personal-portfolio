@@ -4,10 +4,10 @@ import BigPondFish from './BigPondFish';
 function Writing(){
   return (
     <div>
-    <hr/>
+      <hr/>
       <p>This is where my Writing will go</p>
       <BigPondFish/>
-    <hr/>
+      <hr/>
     </div>
   );
 }

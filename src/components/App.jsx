@@ -9,7 +9,7 @@ import Experiences from './experiences/Experiences';
 function App(){
   return (
     <div>
-    <Header/>
+      <Header/>
       <Switch>
         <Route exact path='/' component={Main} />
         <Route exact path='/contact' component={Contact} />

@@ -6,9 +6,9 @@ function Professional(){
   return (
     <div>
       <hr/>
-        <p>This is where my <strong>Professional</strong> will go</p>
-        <Academic/>
-        <Resume/>
+      <p>This is where my <strong>Professional</strong> will go</p>
+      <Academic/>
+      <Resume/>
       <hr/>
     </div>
   );

@@ -6,9 +6,9 @@ function Creative(){
   return (
     <div>
       <hr/>
-        <p>This is where my <strong>Creative</strong> will go</p>
-        <Writing/>
-        <Entertainment/>
+      <p>This is where my <strong>Creative</strong> will go</p>
+      <Writing/>
+      <Entertainment/>
       <hr/>
     </div>
   );

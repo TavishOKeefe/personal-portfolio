@@ -5,11 +5,11 @@ import Modeling from './Modeling';
 function Entertainment(){
   return (
     <div>
-    <hr/>
+      <hr/>
       <p>This is where my Entertainment will go</p>
       <Acting/>
       <Modeling/>
-    <hr/>
+      <hr/>
     </div>
   );
 }

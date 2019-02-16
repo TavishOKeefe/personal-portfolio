@@ -59,7 +59,7 @@ function Header(){
           ul.topnav li {float: none;}
         }
         `}</style>
-        <h1>&hearts; Tavish OKeefe &hearts;</h1>
+      <h1>&hearts; Tavish OKeefe &hearts;</h1>
       <div className="container">
         <ul className="topnav">
           <p><li className="navbar-brand"><Link to="/experiences">Experiences</Link></li></p>
