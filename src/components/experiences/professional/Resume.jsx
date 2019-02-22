@@ -1,9 +1,11 @@
 import React from 'react';
+import resume from '../../../../src/assets/images/Tavish-Resume.jpg';
+
 
 function Resume(){
   return (
     <div>
-      <p>This is where my Resume will go</p>
+      <img src={resume}/>
     </div>
   );
 }
