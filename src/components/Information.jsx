@@ -3,7 +3,7 @@ import React from 'react';
 function Information() {
   return (
     <div>
-    <h3>Contact me anytime:</h3>
+      <h3>Contact me anytime:</h3>
       <p><strong>Email:</strong></p>
       <p>okeefe.tavish@gmail.com</p>
       <p><strong>Cell:</strong></p>

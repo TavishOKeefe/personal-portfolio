@@ -1,36 +1,93 @@
 import React from 'react';
-import Personal from './personal/Personal';
-import Creative from './creative/Creative';
-import Professional from './professional/Professional';
-
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-import styles from '../Styles';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import GridListTileBar from '@material-ui/core/GridListTileBar';
+import ListSubheader from '@material-ui/core/ListSubheader';
+import IconButton from '@material-ui/core/IconButton';
+import InfoIcon from '@material-ui/icons/Info';
 
-function Experiences(props){
+import placesHome from '../../../src/assets/images/Places-Home.jpg';
+import creativeHome from '../../../src/assets/images/Creative-Home.jpg';
+import hobbiesHome from '../../../src/assets/images/Hobbies-Home.jpg';
+import modelingHome from '../../../src/assets/images/Modeling-Home.jpg';
+import professionalHome from '../../../src/assets/images/Professional-Home.jpg';
+import actingHome from '../../../src/assets/images/Acting-Home.jpg';
+
+const styles = theme => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
+  },
+  gridList: {
+    width: 500,
+    height: 450,
+  },
+  icon: {
+    color: 'rgba(255, 255, 255, 0.54)',
+  },
+});
+
+const tileData = [
+  {
+    img: placesHome,
+    title: 'Places',
+  },
+  {
+    img: creativeHome,
+    title: 'Writing',
+  },
+  {
+    img: actingHome,
+    title: 'Acting',
+  },
+  {
+    img: hobbiesHome,
+    title: 'Hobbies',
+  },
+  {
+    img: professionalHome,
+    title: 'Professional',
+  },
+  {
+    img: modelingHome,
+    title: 'Modeling',
+  },
+];
+
+function TitlebarGridList(props) {
   const { classes } = props;
-  return (
 
+  return (
     <div className={classes.root}>
-      <Grid container spacing={24}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}><Personal/></Paper>
-        </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}><Creative/></Paper>
-        </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}><Professional/></Paper>
-        </Grid>
-      </Grid>
+      <GridList cellHeight={300} className={classes.gridList}>
+        <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
+          <ListSubheader component="div">Click on Experiences:</ListSubheader>
+        </GridListTile>
+        {tileData.map(tile => (
+          <GridListTile key={tile.img}>
+            <img src={tile.img} alt={tile.title} />
+            <GridListTileBar
+              title={tile.title}
+              actionIcon={
+                <IconButton className={classes.icon}>
+                  <InfoIcon />
+                </IconButton>
+              }
+            />
+          </GridListTile>
+        ))}
+      </GridList>
     </div>
   );
 }
 
-Experiences.propTypes = {
+TitlebarGridList.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Experiences);
+export default withStyles(styles)(TitlebarGridList);
