@@ -8,9 +8,10 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import { v4 } from 'uuid';
+import { Link } from 'react-router-dom';
 
 import placesHome from '../../../src/assets/images/Places-Home.jpg';
-import creativeHome from '../../../src/assets/images/Creative-Home.jpg';
+import writingHome from '../../../src/assets/images/Writing-Home.jpg';
 import hobbiesHome from '../../../src/assets/images/Hobbies-Home.jpg';
 import modelingHome from '../../../src/assets/images/Modeling-Home.jpg';
 import professionalHome from '../../../src/assets/images/Professional-Home.jpg';
@@ -38,31 +39,37 @@ const tileData = [
     img: placesHome,
     title: 'Places',
     id: v4(),
+    link: '/places',
   },
   {
-    img: creativeHome,
+    img: writingHome,
     title: 'Writing',
     id: v4(),
+    link: '/writing',
   },
   {
     img: actingHome,
     title: 'Acting',
     id: v4(),
+    link: '/acting',
   },
   {
     img: hobbiesHome,
     title: 'Hobbies',
     id: v4(),
+    link: '/hobbies',
   },
   {
     img: professionalHome,
     title: 'Professional',
     id: v4(),
+    link: '/professional',
   },
   {
     img: modelingHome,
     title: 'Modeling',
     id: v4(),
+    link: '/modeling',
   },
 ];
 
@@ -82,7 +89,7 @@ function TitlebarGridList(props) {
               title={tile.title}
               actionIcon={
                 <IconButton className={classes.icon}>
-                  <InfoIcon />
+                  <Link to={tile.link}><InfoIcon/></Link>
                 </IconButton>
               }
             />
