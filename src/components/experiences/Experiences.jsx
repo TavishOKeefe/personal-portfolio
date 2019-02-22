@@ -73,7 +73,7 @@ const tileData = [
   },
 ];
 
-function TitlebarGridList(props) {
+function Experiences(props) {
   const { classes } = props;
 
   return (
@@ -100,8 +100,8 @@ function TitlebarGridList(props) {
   );
 }
 
-TitlebarGridList.propTypes = {
+Experiences.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(TitlebarGridList);
+export default withStyles(styles)(Experiences);
