@@ -7,6 +7,7 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
+import { v4 } from 'uuid';
 
 import placesHome from '../../../src/assets/images/Places-Home.jpg';
 import creativeHome from '../../../src/assets/images/Creative-Home.jpg';
@@ -36,26 +37,32 @@ const tileData = [
   {
     img: placesHome,
     title: 'Places',
+    id: v4(),
   },
   {
     img: creativeHome,
     title: 'Writing',
+    id: v4(),
   },
   {
     img: actingHome,
     title: 'Acting',
+    id: v4(),
   },
   {
     img: hobbiesHome,
     title: 'Hobbies',
+    id: v4(),
   },
   {
     img: professionalHome,
     title: 'Professional',
+    id: v4(),
   },
   {
     img: modelingHome,
     title: 'Modeling',
+    id: v4(),
   },
 ];
 
