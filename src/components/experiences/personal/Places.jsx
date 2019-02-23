@@ -39,31 +39,26 @@ const tileData = [
   {
     img: oklahoma,
     title: 'Oklahoma',
-    about: 'this is a test',
     id: v4(),
   },
   {
     img: la,
     title: 'Los Angeles',
-    about: 'this is a test',
     id: v4(),
   },
   {
     img: nyc,
     title: 'New York City',
-    about: 'this is a test',
     id: v4(),
   },
   {
     img: paris,
     title: 'Paris',
-    about: 'this is a test',
     id: v4(),
   },
   {
     img: portland,
     title: 'Portland',
-    about: 'this is a test',
     id: v4(),
   },
 ];
@@ -74,7 +69,7 @@ function Places(props) {
   return (
     <div className={classes.root}>
       <h2>Places:</h2>
-      <GridList className={classes.gridList} cols={2.5}>
+      <GridList className={classes.gridList} cols={3.5}>
         {tileData.map(tile => (
           <GridListTile key={tile.img}>
             <img src={tile.img} alt={tile.title} />
