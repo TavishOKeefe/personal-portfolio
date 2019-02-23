@@ -13,10 +13,10 @@ import IconButton from '@material-ui/core/IconButton';
 
 const cardStyle = theme => ({
   cardSize: {
-    width: 200,
+    width: 150,
     fontSize: '16px',
     padding: '15px',
-    margin: '10px'
+    margin: '10px',
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -31,10 +31,6 @@ const cardStyle = theme => ({
   media: {
     height: 140,
   },
-  img: {
-    height: 150,
-    width: 150,
-  }
 
 });
 
@@ -64,7 +60,7 @@ class Main extends React.Component {
     return(
       <div>
         <Card className={classes.cardSize}>
-          <img src={profile}/>
+        <img src={profile}/>
           <Typography variant="display1" align="left">About:</Typography>
           <CardActions>
             <IconButton className={classnames(classes.expand, {[classes.expandOpen]: this.state.expanded,})}
